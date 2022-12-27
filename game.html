@@ -1,0 +1,57 @@
+<!DOCTYPE HTML >
+<html>
+<head>
+<title>Game</title>
+<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+<link type="text/css" rel="stylesheet" href= "game.style.css" />
+
+</head>
+<body>
+	
+	<div id="intro" class="flexible">
+		<div class="animate__animated animate__rubberBand" id="beginning"> 
+			<div id="text">Level of difficulty</div>
+			<div id="easy_bg" class="level_bg" >EASY</div>
+			<div id="medium_bg" class="level_bg">MEDIUM</div>
+			<div id="hard_bg" class="level_bg">HARD</div>
+		</div>
+	</div>	
+	
+	<div id= "container" class="hide"  >	
+		<div id="box">
+			<div id = "difficulty" class= "hide" >
+				<div id="easy" class="level" onclick="easyTable()">EASY</div>
+				<div id="medium" class="level" onclick="mediumTable()">MEDIUM</div>
+				<div id="hard" class="level" onclick="hardTable()" >HARD</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div id="score" class="hide">Score: 0 </div>
+			<div class="animate__animated animate__fadeInLeft hide " id="card" >
+				<div id="question">Question</div>
+				<div id="Answer">
+					<div class="buttonf" id="AnswerA">AnswerA</div>
+					<div class="buttonf" id="AnswerB">AnswerB</div>
+					<div class="buttonf" id="AnswerC">AnswerC</div>
+					<div class="buttonf" id="AnswerD">AnswerD</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="clear:both;"></div>
+		<br><br>
+		<nav id="table" class= "hide"></nav>
+	</div>
+<div id="table_result"></div>
+
+
+
+<footer id="footer"> Weronika Ścibior &copy; 2020 </footer>
+<script type="text/javascript" src="game.script.js"></script>
+
+</body>
+</html>
